@@ -21,6 +21,12 @@ To ensure the application's required libraries are installed, run 'npm i' in the
 ## Usage
 See the [walkthrough video](https://github.com/trhenderson303/social-media-api/assets/132783253/7e86da7c-cffc-4d9d-9c64-18db801829db) for a demonstration of the application's functionality using Insomnia.
 
+<img width="1439" alt="Screenshot 2023-07-30 at 3 18 26 PM" src="https://github.com/trhenderson303/social-media-api/assets/132783253/8d9c4bec-5464-4df1-af03-c0383503cb26">
+
+<img width="1440" alt="Screenshot 2023-07-30 at 3 18 43 PM" src="https://github.com/trhenderson303/social-media-api/assets/132783253/8f0a653d-3ee5-480a-8a06-df347642fc1d">
+
+<img width="1440" alt="Screenshot 2023-07-30 at 3 18 57 PM" src="https://github.com/trhenderson303/social-media-api/assets/132783253/279a0229-9c1d-49a2-9dda-2bdd2470077e">
+
 
 
 
