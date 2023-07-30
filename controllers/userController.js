@@ -51,10 +51,11 @@ module.exports = {
   },
 
   async addFriend(req, res) {
+    console.log(req.body);
     try {
       const user = await User.findOneAndUpdate(
         { _id: req.param.userId },
-        { $addToSet: { friends: req.body.userId } },
+        { $addToSet: { friends: req.body.friendId } },
         { runValidators: true}
       );
       if (!user) {

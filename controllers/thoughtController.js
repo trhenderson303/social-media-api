@@ -66,7 +66,7 @@ module.exports = {
 
   async deleteThought(req, res) {
     try {
-      const thought = await Application.findOneAndRemove({ _id: req.params.thoughtId });
+      const thought = await Thought.findOneAndDelete({ _id: req.params.thoughtId });
       if (!thought) {
         return res.status(404).json({ message: 'Thought not found' });
       }
@@ -76,12 +76,12 @@ module.exports = {
         { new: true }
       );
 
-      if (!user) {
-        return res.status(404).json({
-          message: 'User not found',
-        });
-      }
-      res.json({ message: 'Thought successfully deleted' });
+      // if (!user) {
+      //   return res.status(404).json({
+      //     message: 'User not found',
+      //   });
+      // }
+    res.json({ message: 'Thought successfully deleted' });
     } catch (err) {
       res.status(500).json(err);
     }

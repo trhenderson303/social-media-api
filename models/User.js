@@ -14,7 +14,10 @@ const userSchema = new Schema(
       type: String,
       required: true,
       unique: true,
-      //validate with regex... TODO
+      match: [
+        /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,
+        "invalid email",
+      ],
     },
     thoughts: [
       {
@@ -25,7 +28,7 @@ const userSchema = new Schema(
     friends: [
       {
         type: Schema.Types.ObjectId,
-        ref: "User",
+        ref: "user",
       },
     ],
   },
